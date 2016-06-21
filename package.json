@@ -8,18 +8,24 @@
     "url": "git://github.com/spencermountain/wikipedia-to-mongodb.git"
   },
   "bin": {
-    "wikipedia-to-mongodb": "./index.js"
+    "wikipedia-to-mongodb": "./index.js",
+    "wikipedia-to-mongodb-worker": "./worker.js"
   },
   "main": "index.js",
   "engines": [
     "node = 0.10.33"
   ],
   "dependencies": {
+    "bluebird": "^3.4.1",
     "commander": "^2.9.0",
+    "deep-map": "^1.4.1",
+    "elasticsearch": "^11.0.1",
     "kue": "^0.11.0",
-    "mongodb": "^2.1.18",
+    "lodash": "^4.13.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.72.0",
     "unbzip2-stream": "^1.0.9",
-    "wtf_wikipedia": "^0.3.2",
+    "wtf_wikipedia": "https://github.com/cigolpl/wtf_wikipedia/tarball/master",
     "xml-stream": "^0.4.5"
   }
 }
